@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" >
+		<title>Curso completo de desenvolvedor web</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+	</head>
+	
+	<body>
+		
+		<form action="form.php" method="post">
+			<div class="form-group">
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required="required">
+			</div>
+			<div class="form-group">
+				<label for="email">E-mail</label>
+				<input type="email" name="email" id="email" class="form-control" placeholder="seu@email.com.br" required="required">
+			</div>
+			<div class="form-group">
+				<label for="nascimento">Nascimento</label>
+				<input type="date" name="mascimento" id="nascimento" class="form-control" required="required" min="2016-01-01" max="">
+			</div>
+			<div class="form-group">
+				<label>Sexo</label>
+				<input type="radio" name="sexo" id="masculino" aria-label="masculino" checked="checked">
+				<label for="masculino">Masculino</label>
+				<input type="radio" name="sexo" id="feminino"  aria-label="feminino">
+				<label for="feminino">Feminino</label>
+			</div>
+			
+			<div class="form-group">
+				<label for="li">Li o contrato</label>
+				<input type="checkbox" name="li" id="li" required="required" checked="checked" >
+			</div>
+			<div class="form-group">
+				<label for="aceito">Aceito os termos</label>
+				<input type="checkbox" name="aceito" id="aceito" required="required" >
+			</div>
+			<div class="form-group">
+				<label for="volume">volume</label>
+				<input type="range" name="volume" id="volume" min="0" max="100" value="25" >
+			</div>
+			<div class="form-group">
+				<label for="meter">Bateria</label>
+				<meter min="0" id="meter" max="100" low="15"  value="10">10</meter>
+			</div>
+			<div class="form-group">
+				<label for="carregando">carregando</label>
+				<progress id="carregando"  max="100" value="60">60%</progress>
+			</div>
+			<div class="form-group">
+				<label for="ano">Ano</label>
+				<input type="number" name="ano" id="ano" min="1900" max="9999" value="2018" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="cor">Cor</label>
+				<input type="color" name="cor" id="cor" value="black" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="busca">busca</label>
+				<input type="search" name="busca" id="busca" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="mensagem">Mensagem</label>
+				<textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="estados" >Estados</label>
+				<select name="estados" id="estados" multiple="multiple"  size="3">
+					<option value="SP">São Paulo</option>
+					<option value="MG" selected="selected" >Minas Gerais</option>
+					<option value="RJ">Rio de Janeiro</option>
+				</select>
+			</div>
+			
+			<div class="form-group">
+				<label for="estados" >Estados</label>
+				<select name="estados" id="estados" multiple="multiple"  size="3">
+					<optgroup label="Sudeste">
+						<option value="SP">São Paulo</option>
+						<option value="MG" selected="selected" >Minas Gerais</option>
+						<option value="RJ">Rio de Janeiro</option>
+					</optgroup>
+					<optgroup label="Sul">
+						<option value="PR">Paraná</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="RS">Rio Grande do Sul</option>
+					</optgroup>
+				</select>
+			</div>
+			
+			<input type="hidden" name="id" value="1">
+			
+			<div class="form-group">
+				<label for="senha">senha</label>
+				<input type="password" name="senha" id="senha" class="form-control"> 
+			</div>
+			
+			
+			<div>
+				<button type="submit" class="btn btn-primary">Cadastrar</button>
+			</div>
+		</form>
+		
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
